@@ -14,10 +14,10 @@
   <body>
     <div class="doc__bg"></div>
     <nav class="header">
-      <h1 class="logo"><img src="assets/BRUMAI_LOGOS/SVG/COLOURED/BRUMAI_MANDARIN.svg" width="100"> <span class="logo__thin">Doc</span></h1>
+      <h1 class="logo"><img src="assets/BRUMAI_LOGOS/SVG/COLOURED/BRUMAI_MANDARIN.svg" width="80"> <span class="logo__thin">Docs</span></h1>
       <ul class="menu">
         <div class="menu__item toggle"><span></span></div>
-        <li class="menu__item"><a href="" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="https://github.com/Team-ArchItects/Team-ArchItects.github.io" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
         <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
       </ul>
     </nav>
@@ -27,10 +27,10 @@
           <li class="js-btn selected">Quickstart</li>
           <li class="js-btn">The Datafile</li>
           <li class="js-btn">App Function</li>
-          <li class="js-btn">How to add React components</li>
           <li class="js-btn">Component Tree</li>
-          <li class="js-btn">Troubleshoot - Quick Fixes and Bugs</li>
-          <li class="js-btn">FAQ</li>
+          <li class="js-btn">Supabase</li>
+          <li class="js-btn">Troubleshooting</li>
+          <li class="js-btn">FAQs</li>
         </ul>
       </aside>
       <article class="doc__content">
@@ -53,70 +53,153 @@
             <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
             <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="YouTube Badge">
             <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="X Badge">
+            <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase Badge">
           </div>
           <h4>Documentation</h4>
-          <p>BrumAI's documentation, are publicly hosted on GitHub Pages. The docs may also be run locally. The BrumAI website, is hosted on Netlify.</p>
-          <p>Our documentation search is powered by Algolia's DocSearch.</p>
+          <p>BrumAI's documentation is publicly hosted on GitHub Pages. The docs may also be run locally. The BrumAI website is a Next.js app and is therefore hosted on Netlify to avoid the difficulties present by hosting it on GitHub Pages as of 2023.</p>
           <h3 class="section__title">Installation</h3>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
               <code>
-                $ scribbler  ——config
-                  {
-                    “encryption”: true, 
-                    “highlighting“: true,
-                    “prettyTable”: false,
-                    “font”: [“Helvetica”, “sans-serif”],
-                    “folder”: “~/Desktop“
-                  }
+                $ git clone https://github.com/Team-ArchItects/Team-ArchItects.github.io.git
+                $ npm i
+                $ npm run dev
               </code>
             </pre>
           </div>
         </section>
         <section class="js-section">
-          <h3 class="section__title">Configuration</h3>
-          <p>Learn how to configure settings for Scribbler, such as your syntax highlighting preference and the default saving folder location.</p>
-          <table id="customers">
+          <h3 class="section__title">The Datafile</h3>
+          <p>The data file is the centralised location for developers or non-technical people wanting to change the data of the website.
+            This file has been created to increase maintainability of the website and avoid bugs and errors.
+
+            It is located in:</p>
+
+            <span class="code code--inline">app/data/data.js</span>
+
+          </p>
+          <table id="datafile">
             <tr>
               <th>Options</th>
               <th>Value</th>
-              <th>Default</th>
+              <th>Type</th>
             </tr>
             <tr>
-              <td>encryption</td>
-              <td>encrypt all notes before saving. If turned on, it requires password to open the file.</td>
-              <td>false</td>
+              <td>pages</td>
+              <td>These are our Next.js headers that direct to the various pages of the website located in the top left of the navigation bar.</td>
+              <td>const/object</td>
             </tr>
             <tr>
-              <td>highlighting</td>
-              <td>Show syntax highlight on markdown text.</td>
-              <td>true</td>
+              <td>headerSocials</td>
+              <td>These are our social icons, they are located in the top right of the navigation bar. They contain details about the sponsors and the location of the icon images. They redirect to BrumAI's social media sites.</td>
+              <td>const/object</td>
             </tr>
             <tr>
-              <td>prettyTable</td>
-              <td>Render table with Scribbler’s pretty table style.</td>
-              <td>true</td>
+              <td>footerSponsors</td>
+              <td>These are BrumAI's sponsors, they are located in the footer of the website. They contain details about the sponsors and the location of the icon images. They redirect to the websites of the sponsors.</td>
+              <td>const/object</td>
             </tr>
           </table>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
+          <p>Any additions to the website should placed in the data file for the benefit of future developers.</p>
           <hr />
         </section>
         <section class="js-section">
-          <h3 class="section__title">Keybindings</h3>
-          <p>Lorem ipsum dolor sit amet, scripta tibique indoctum sit ei, mel inani aeterno ad. Facer oratio ex per. At eam movet verear, in sea brute patrioque disputando, usu nonumes torquatos an. Ex his quaerendum intellegebat, ut vel homero accusam. Eum at debet tibique, in vocibus temporibus adversarium sed. Porro verear eu vix, ne usu tation vituperata.</p>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
+          <h3 class="section__title">App Function (React components and how to add them)</h3>
+          <p>The <span class="code code--inline">page.js</span> contains references to all React components used in the project. They are listed in order of appearance. All React components have to be imported from their respective directories into this one before they will work (and exported from their previous directory). To add a React component, slot your component in at your desired location and ensure it is capitalised and between chevrons. This page is located at:</p>
+          <span class="code code--inline">app/page.js</span>
+          <hr />
+          <table id="reactcomponents">
+            <tr>
+              <th>Options</th>
+              <th>Value</th>
+              <th>Type</th>
+            </tr>
+            <tr>
+              <td>Banner</td>
+              <td>This is the masthead of the page. It contains the background image as well as a welcome graphic and message.</td>
+              <td>React component</td>
+            </tr>
+            <tr>
+              <td>EventSection</td>
+              <td>This contains the latest events being hosted by BrumAI.</td>
+              <td>React component</td>
+            </tr>
+            <tr>
+              <td>Instagram</td>
+              <td>A carousel of BrumAI's latest Instagram posts. This connects to the Instagram API.</td>
+              <td>React component</td>
+            </tr>
+            <tr>
+              <td>Tweet</td>
+              <td>Embeds of selected BrumAI tweets to be highlighted on the website. These can be generated via <a href="https://publish.twitter.com" class="link--light">this site</a>.</td>
+              <td>React component</td>
+            </tr>
+            <tr>
+              <td>GetInvolved</td>
+              <td>This is a call to action. It is a graphic with text displayed above it.</td>
+              <td>React component</td>
+            </tr>
+          </table>
           <hr />
         </section>
         <section class="js-section">
-          <h3 class="section__title">Issues</h3>
-          <p>Lorem ipsum dolor sit amet, scripta tibique indoctum sit ei, mel inani aeterno ad. Facer oratio ex per. At eam movet verear, in sea brute patrioque disputando, usu nonumes torquatos an. Ex his quaerendum intellegebat, ut vel homero accusam. Eum at debet tibique, in vocibus temporibus adversarium sed. Porro verear eu vix, ne usu tation vituperata.</p>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
+          <h3 class="section__title">Component Tree</h3>
+          <p>We need to figure out a way of making this viewable, like making it clickable to allow for a zoom in?</p>
+          <img src="assets/component_tree.png" width="500px" class="center">
+          <br>
+          <p>The complete component tree of files and components in the website.</p>
+          <hr />
         </section>
-      </article>
-    </div>
+        <section class="js-section">
+          <h3 class="section__title">Supabase</h3>
+          <img src="assets/supabase/supabase-logo-wordmark--light.png" class="center" width="150px">
+          <p>Would someone please fill this in?</p>
+          <p>For the project we decided to use Supabase because it is open source and has functionality to allow for non-developers to use. The login credentials for Supabase are in the possession of the organisation.</p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Troubleshooting</h3>
+          <table id="troubleshooting">
+            <tr>
+              <th>Problem</th>
+              <th>Solution</th>
+              <th>Relevant file</th>
+            </tr>
+            <tr>
+              <td>The website won't upload to GitHub Pages/another provider.</td>
+              <td>GitHub Pages has difficulties in hosting Next.js projects. This may also be true for other providers. Please check in advance for transferring.</td>
+              <td>All</td>
+            </tr>
+            <tr>
+              <td>Instagram images not displaying.</td>
+              <td>The access token may have expired. Please generate a new one on the Meta Developer website.</td>
+              <td>Instagram React Component</td>
+            </tr>
+          </table>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">FAQs</h3>
+          <table id="datafile">
+            <tr>
+              <th>Question</th>
+              <th>Answer</th>
+            </tr>
+            <tr>
+              <td>Is the website responsive?</td>
+              <td>Every care has been taken to ensure that the website works on all devices in the best possible manner.</td>
+            </tr>
+            <tr>
+              <td>Is the website going to break?</td>
+              <td>The main external dependencies are Next.js, React, Tailwind, the Instagram API, Material UI and Twitter. In the future, there may be changes to these which could break components, but we anticipate that all of these will have longevity.</td>
+            </tr>
+          </table>
+          <hr />
+        </section>
 
-    <footer class="footer">Scribbler is a free HTML template created exclusively for <a href="https://tympanus.net/codrops/" target="_blank" class="link link--light">Codrops</a>.</footer>
+</div>
+
+    <footer class="footer">BrumAI Next.js website and docs created with love in 2023.</footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script src="scribbler.js"></script>

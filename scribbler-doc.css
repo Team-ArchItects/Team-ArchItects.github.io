@@ -4,6 +4,12 @@ html, body {
   min-height: 100vh;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* layout */
 .header {
   border-bottom: 1px solid var(--code-bg-color);
