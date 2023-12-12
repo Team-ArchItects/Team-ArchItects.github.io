@@ -14,16 +14,18 @@
   </head>
   <body>
     <nav>
-      <div class="logo"></div>
+      <div class=""></div>
       <ul class="menu">
         <div class="menu__item toggle"><span></span></div>
         <li class="menu__item"><a href="doc.html" class="link link--dark"><i class="fa fa-book"></i> Documentation</a></li>
-        <li class="menu__item"><a href="" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="https://github.com/Team-ArchItects/Team-ArchItects.github.io" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
       </ul>
     </nav>
     <div class="hero">
-      <h1 class="hero__title">Scribbler</h1>
-      <p class="hero__description">Take your markdown notes in terminal</p>
+      <img src="assets/BRUMAI_LOGOS/SVG/COLOURED/BRUMAI_MANDARIN.svg" width="180px">
+      <br></br>
+      <br>
+      <p class="hero__description">Full documentation for the BrumAI Next.js Website.</p>
     </div>
     <div class="hero__terminal">
       <pre>
@@ -36,44 +38,42 @@
         <h3 class="section__title">Installation</h3>
         <div class="tab__container">
           <ul class="tab__menu">
-            <li class="tab active" data-tab="mac">mac</li>
-            <li class="tab" data-tab="linux">linux</li>
-            <li class="tab" data-tab="win">win</li>
+            <li class="tab active" data-tab="bash">bash</li>
           </ul>
           <pre class="nohighlight code">
-            <code class="tab__pane active mac">$  brew install scribbler</code>
-            <code class="tab__pane linux">$  apt-get install scribbler</code>
-            <code class="tab__pane win">$  gem install scribbler</code>
+            <code class="tab__pane active mac">$  npm i </code>
+            <code class="tab__pane active mac">$  npm run dev </code>
+
           </pre>
         </div>
       </div>
       <div class="feature">
         <div class="feature__item">
-          <h3 class="section__title">Fast & Light</h3>
-          <p>Start writing your notes immediately in any terminal! No more time wasted on navigating and opening your text editor.</p>
+          <h3 class="section__title">Maintainable</h3>
+          <p>We have placed all of the data that needs to be changed in order to maintain the site inside a single <span class="code code--inline">data.js</span> file. This allows for the site to be maintained and updated by a layperson.</p>
         </div>
         <div class="feature__item">
-          <h3 class="section__title">File Syncing</h3>
-          <p>Save your file in Dropbox then you can access to it from anywhere.</p>
+          <h3 class="section__title">Future-proof</h3>
+          <p>React/Next.js/Tailwind are all modern technologies which will add to the longevity of the site.</p>
         </div>
         <div class="feature__item">
-          <h3 class="section__title">Secure</h3>
-          <p>Encrypt your notes optionally. No one can get to your secrets! </p>
+          <h3 class="section__title">Scalable</h3>
+          <p>We have built the site to be scalable by adding as much as possible into React components. This ensures reusable code and the scalability of the website.</p>
         </div>
         <div class="feature__item">
-          <h3 class="section__title">Configuration</h3>
-          <p>Maintain all your settings in a single <span class="code code--inline">config.json</span> file. Never need to redo the setting every single time jotting down a note.</p>
+          <h3 class="section__title">Minimalist</h3>
+          <p>We have taken care to ensure the website and documentation are minimalist and clean, to ensure that they are clear for users.</p>
         </div>
         <div class="feature__item">
-          <h3 class="section__title">Highlightings</h3>
-          <p>For better readability, scribbler has a clean, beautiful color scheme allow you to scan files fast.</p>
+          <h3 class="section__title">Modern</h3>
+          <p>The website is modern and implements modern SAAS soltuions and APIs.</p>
         </div>
         <div class="feature__item">
-          <h3 class="section__title">Keybindings</h3>
-          <p>You can expect common keybindings for scribbler. Customize <span class="code code--inline">bindings.json</span> for your own liking! </p>
+          <h3 class="section__title">Characterful</h3>
+          <p>The website is designed with an industrial aesthetic, inspired by Birmingham.</p>
         </div>
       </div>
-      <div class="keybinding">
+      <!-- <div class="keybinding">
         <ul class="keybinding__detail">
           <h3 class="keybinding__title">Default Keybindings</h3>
           <li>Quit without saving <span class="keybinding__label">Ctrl+C</span></li>
@@ -88,9 +88,9 @@
           <li><span class="keybinding__label">Ctrl+V</span> Insert YouTube Video</li>
           <li><span class="keybinding__label">Ctrl+T</span> Insert Table</li>
         </ul>
-      </div>
+      </div> -->
       <div class="callout">
-        <p>Read our documentation for advanced keybindings and customization</p>
+        <p>Read the full documentation:</p>
         <a href="doc.html" class="button--primary">Documentation</a>
       </div>
     </div>
@@ -99,45 +99,15 @@
         <h3 class="section__title">Changelog</h3>
         <div class="changelog__item">
           <div class="changelog__meta">
-            <h4 class="changelog__title">v0.7</h4>
-            <small class="changelog__date">10/12/2017</small>
+            <h4 class="changelog__title">v0.1</h4>
+            <small class="changelog__date">23/12/2023</small>
           </div>
           <div class="changelog__detail">
             <ul>
-              <li>Improving the writing workflow with better key bindings</li>
-              <li>Design updates</li>
-              <li>SSL Verification for web hooks</li>
-              <li>Render Emoji</li>
+              <li>Project Initialisation.</li>
             </ul>
+            <br></br>
           </div>
-        </div>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">v0.6</h4>
-            <small class="changelog__date">7/30/2017</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Adding Unicode support</li>
-              <li>Basic text highlighting</li>
-              <li>Fresh Design</li>
-            </ul>
-          </div>
-        </div>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">v0.5</h4>
-            <small class="changelog__date">5/10/2017</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Save default md file in new folders</li>
-              <li>Ability to quick search on existing notes</li>
-            </ul>
-          </div>
-        </div>
-        <div class="changelog__callout">
-          <a href="#" class="button--secondary">Checkout Full Log</a>
         </div>
       </div>
     </div>
