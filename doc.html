@@ -26,9 +26,10 @@
       <aside class="doc__nav">
         <ul>
           <li class="js-btn selected">Quickstart</li>
-          <li class="js-btn">The Datafile</li>
+          <li class="js-btn">The Data File</li>
           <li class="js-btn">App Function</li>
           <li class="js-btn">Component Tree</li>
+          <li class="js-btn">Contact Form</li>
           <li class="js-btn">Supabase</li>
           <li class="js-btn">Images</li>
           <li class="js-btn">Troubleshooting</li>
@@ -78,7 +79,7 @@
         <!-- ! DATAFILE SECTION STARTS -->
 
         <section class="js-section">
-          <h3 class="section__title">The Datafile</h3>
+          <h3 class="section__title">The Data File</h3>
           <p>The data file is the centralised location for developers or non-technical people wanting to change the data of the website.
             This file has been created to increase maintainability of the website and avoid bugs and errors.
 
@@ -108,6 +109,10 @@
               <td>These are BrumAI's sponsors, they are located in the footer of the website. They contain details about the sponsors and the location of the icon images. They redirect to the websites of the sponsors.</td>
               <td>const/object</td>
             </tr>
+            <td>homepageData</td>
+            <td>This is the data that determines the banner text and the 'Get Involved' section text.</td>
+            <td>const/object</td>
+          </tr>
           </table>
           <p>Any additions to the website should placed in the data file for the benefit of future developers.</p>
           <hr />
@@ -138,12 +143,22 @@
               <td>React component</td>
             </tr>
             <tr>
-              <td>EmbedInstagram</td>
-              <td>BrumAI's latest Instagram posts. This updates once every 24 hours.</td>
+              <td>YouTube</td>
+              <td>Displays two hardcoded, embedded YouTube videos.</td>
               <td>React component</td>
             </tr>
             <tr>
-              <td>Tweet</td>
+              <td>EmbedInstagram</td>
+              <td>BrumAI's latest Instagram posts. This updates once every 24 hours. It uses a <a href="https://www.sociablekit.com/" class="link--light">SociableKIT</a> widget.</td>
+              <td>React component</td>
+            </tr>
+            <tr>
+              <td>EmbedLinkedIn</td>
+              <td>BrumAI's latest LinkedIn posts. This updates once every 24 hours. It uses a <a href="https://www.sociablekit.com/" class="link--light">SociableKIT</a> widget.</td>
+              <td>React component</td>
+            </tr>
+            <tr>
+              <td>EmbedX</td>
               <td>Embeds of selected BrumAI tweets to be highlighted on the website. These can be generated via <a href="https://publish.twitter.com" class="link--light">this site</a>.</td>
               <td>React component</td>
             </tr>
@@ -169,13 +184,23 @@
         </section>
 
         <!-- ! COMPONENT TREE SECTION ENDS -->
+        <!-- ! CONTACT FORM SECTION STARTS -->
+
+        <section class="js-section">
+          <h3 class="section__title">Contact Form</h3>
+          <p>The contact form uses <a href="https://www.emailjs.com/" class="link--light">EmailJS</a> as a backend. The credentials for this are in possession of the company.</p>
+          <p>Templates for emails received can be configured on their website. The email used for this account can be changed in the settings section of their website.</p>
+          <hr />
+        </section>
+
+        <!-- ! CONTACT FORM SECTION ENDS -->
         <!-- ! SUPABASE SECTION STARTS -->
 
         <section class="js-section">
           <h3 class="section__title">Supabase</h3>
           <img src="assets/supabase/supabase-logo-wordmark--light.png" class="center" width="150px">
           <p>Would someone please fill this in?</p>
-          <p>For the project we decided to use Supabase because it is open source and has functionality to allow for non-developers to use. The login credentials for Supabase are in the possession of the organisation.</p>
+          <p>For the project we decided to use <a href="https://www.supabase.com/" class="link--light">Supabase</a> because it is open source and has functionality to allow for non-developers to use. The login credentials for Supabase are in the possession of the organisation.</p>
           <hr />
         </section>
 
