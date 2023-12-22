@@ -109,8 +109,24 @@
               <td>These are BrumAI's sponsors, they are located in the footer of the website. They contain details about the sponsors and the location of the icon images. They redirect to the websites of the sponsors.</td>
               <td>const/object</td>
             </tr>
+          <tr>
             <td>homepageData</td>
             <td>This is the data that determines the banner text and the 'Get Involved' section text.</td>
+            <td>const/object</td>
+          </tr>
+            tr>
+            <td>aboutUsCopy</td>
+            <td>This is data for the "Abou Us" page details at the top, above meet the team.</td>
+            <td>const/object</td>
+          </tr>
+          <tr>
+            <td>coreTeamData</td>
+            <td>This is the data for the core BrumAI team members.</td>
+            <td>const/object</td>
+          </tr>
+          <tr>
+            <td>websitteTeamData</td>
+            <td>This is the data for the team members who developed he website.</td>
             <td>const/object</td>
           </tr>
           </table>
@@ -198,8 +214,89 @@
         <section class="js-section">
           <h3 class="section__title">Supabase</h3>
           <img src="assets/supabase/supabase-logo-wordmark--light.png" class="center" width="150px">
-          <p>Would someone please fill this in?</p>
-          <p>For the project we decided to use <a href="https://www.supabase.com/" class="link--light">Supabase</a> because it is open source and has functionality to allow for non-developers to use. The login credentials for Supabase are in the possession of the organisation.</p>
+          <p>For the project we are using <a href="https://www.supabase.com/" class="link--light">Supabase</a></p>
+          <p>The login credentials for Supabase are in the possession of the organisation. Once logged in on the Supabase website, navigate to 'Brum AI Website Data' project. The database can be updated by using the user friendly Table Editor interface, or via the SQL editor. The API anon key and URL can be found by navigating to Settings -> API. These can then be stored as environment variables localy and/or by the hosting provider.</p>
+          <p>To update the table using the Table Editor: Select Table Editor -> eventsList -> insert -> insert row. This will load a form where data can be input. Please fill in as many fields as possible. Some fields are required and MUST be filled out.</p>
+         
+          <table id="reactcomponents">
+            <tr>
+              <th>Column Name</th>
+              <th>Value</th>
+              <th>Required</th>
+            </tr>
+            <tr>
+              <td>ID</td>
+              <td>This is automatically generated and can thus be left blank.</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>event_name</td>
+              <td>The name of the event.</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>event_description</td>
+              <td>A description of the event.</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>event_location</td>
+              <td>The location of the event.</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>start_date</td>
+              <td>The date the event starts.</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>end_date</td>
+              <td>The date the event ends (if other than the start date)</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>display_until_date</td>
+              <td>This should be set as the last date at which the event is considered 'upcoming' (e.g. The day of a one off event, or day 3 of a 5 day course)</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>start_time</td>
+              <td>The time the event starts.</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>end_time</td>
+              <td>The time the event ends.</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>image_url</td>
+              <td>The url of an image to be displayed with the event. Any externally linked image should work, if there is any issue there is a placeholder image in the codebase which will display instead.</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>image_alt</td>
+              <td>The text description for the image added above.</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>meetup_link</td>
+              <td>The url of the event on MeetUp.</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>tags</td>
+              <td>e.g. "Talk", "Course", "Online", "In-Person". Tags must be written as an array: ["tag one", "tag two", "tag three"]</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>zoom_link</td>
+              <td>The url for an event on Zoom. This is not a part of the current deploy but may be utilised in the future.</td>
+              <td>❌</td>
+            </tr>
+          </table>
+
+          <p>As we are using the free tier of Supabase, Supabase will pause projects that have been inactive for more than 7 days. Should the project become inactive, the account holder will be notified. Projects can be reactivated by logging into Supabase, selecting the project from the dashboard (it will state 'project is paused') and then selecting 'restore project.'</p>
           <hr />
         </section>
 
